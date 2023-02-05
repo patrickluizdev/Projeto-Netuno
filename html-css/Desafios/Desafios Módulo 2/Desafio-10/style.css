@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap');
+
+@font-face {
+    font-family: "Android";
+    src: url('fontes/idroid.otf') format('opentype'),
+         url('fontes/Android.ttf') format('truetype');
+    font-weight: none;
+    font-style: normal;
+}
+
+:root {
+    --color-0: #165f37;
+    --color-1: #338f5c;
+    --color-2: #69df9c;
+    --color-3: aliceblue;
+    --fonte-android: 'Android';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/************************ HEADER ********************************/
+header {
+    background: linear-gradient(to top, var(--color-0), var(--color-1));
+    font-family: var(--fonte-padrao);
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 3vh;
+    
+}
+
+header div{
+    text-align: center;
+    color: var(--color-3);
+    margin: 2vh;
+}
+
+header div ol{
+    text-align: start;
+}
+
+header div li{
+    display: inline;
+    padding: 1vh;
+    color: var(--color-3);
+}
+
+header div li a {
+    color: var(--color-3);
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+header h1{
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: xx-large;
+}
+
+header h2 {
+    margin: auto;
+    max-width: 50%;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-3);
+    text-shadow: 0px 1px 1px var(--color-2);
+}
+
+
+/************************ ARTICLE ********************************/
+
+body{
+    background-color: var(--color-2);
+}
+
+article{
+    background-color: var(--color-3);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin-bottom: 2vh;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1vh 0.1vh 2vh var(--color-0);
+}
+
+article h1, h2{
+    padding-left: 4vh;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    font-family: "Android";
+    height: 4vh;
+    color: var(--color-0);
+    
+
+    
+}
+article h2{
+    background: linear-gradient(to left, var(--color-3), var(--color-2));
+}
+
+article p{
+    padding-left: 1vh;
+    padding-right: 1vh;
+    text-align: justify;
+    margin: 1vh;
+    font-size: large;
+    line-height: 1.5;
+}
+
+article p::first-letter {
+    font-size: 1.2em;
+    padding-left: 2vh;
+ }
+
+article a, strong{
+    color: var(--color-0);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+article picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+}
+
+article div{
+    background-color: var(--color-0);
+    min-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+article div iframe{
+    min-width: 50%;
+    margin: 2vh;
+}
+
+/**** Aside ****/
+
+article aside{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+article aside h3{
+    color: var(--color-3);
+    background-color: var(--color-1);
+    padding: 1vh;
+    text-align: start;
+    
+    min-width: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article aside div{
+    background-color: var(--color-2);
+    margin: 0;
+    flex-direction: column;
+    min-width: 90%;
+    border: 1px solid var(--color-2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: stretch  ;
+    justify-content: center;
+}
+
+article aside div ul{
+    height: 18vh;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    padding-left: 10vh;
+    padding-bottom: 1vh;
+}
+
+article aside ul li{
+    text-decoration: none;
+}
+
+article aside div ul li::before{
+    content: "\2713";
+    margin-right: 10px;
+}
+
+
+/*************** FOOTER *******************/
+footer{
+    background-color: var(--color-0);
+    text-align: center;
+    color: var(--color-2) ;
+}
+
+footer p strong{
+    color: var(--color-3) ;
+}
+
+
+/**** CLASSES  ****/
+
+.size-img{
+    min-width: 100%;
+}
+
+
+
