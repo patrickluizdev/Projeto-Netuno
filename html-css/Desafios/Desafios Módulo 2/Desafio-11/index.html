@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 11</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .space {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index:0;
+
+         }
+
+        .astro{
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            width: 30%;
+         }
+
+    </style>
 </head>
 <body>
-    
+        <img class="space" src="imagens/espaco.jpg" id="space">  
+
+        <img class="astro" src="imagens/astronauta.png" id="astro"> 
 </body>
+
 </html>
