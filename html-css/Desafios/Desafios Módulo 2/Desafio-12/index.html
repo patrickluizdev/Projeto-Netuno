@@ -30,10 +30,12 @@
         }
 
         body div{
-            margin-top: 3vh;
-            padding-top: 3vh;
+            margin-top: 1vh;
+            padding-top: 1vh;
             padding-bottom: 1vh;
             display: flex;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
             
         }
         pre{
@@ -41,21 +43,28 @@
             font-weight: 700;
         }
 
-        .two img{
-            width: 100%;
-            z-index: 1;
+        .img-1{
+            background-image: url(imagens/background001.jpg);
+        }
+        .img-2{
+            background-image: url(imagens/background002.jpg);
+
         }
 
-        .two pre{
-            width: 80%;
-            height: 30%;
-            margin-top: 15%;
-            padding-top: 10%;
-            background-color: rgba(129, 136, 132, 0.1);
-            position: absolute;
-            z-index: 2;
+         .box{
+            width: 50vh;
+            height: 30vh;
+            padding-top: 10vh;
+            background-color: rgba(8, 8, 8, 0.5);
             font-weight: 900;
             color: aliceblue;
+        }
+
+
+        .rz-img{
+            background-attachment: fixed;
+            background-position: right bottom;
+            background-size: cover;
         }
         
     </style>
@@ -79,9 +88,8 @@
             </pre>
         </div>
 
-        <div class="two">
-            <img src="imagens/background001.jpg" alt="img">
-              <pre>
+        <div class="two rz-img img-1">
+              <pre  class=" box">
     Não é Nais como era Antes
     É tudo abreviado
     "Voce" só tem duas letras
@@ -112,8 +120,8 @@
             </pre>
         </div>
 
-        <div class="four">
-            <pre>
+        <div class="four rz-img img-2">
+            <pre class=" box">
     Tenho saudade das cartas
     Escritas com a própria mão
     Mandava no mês de Junho
