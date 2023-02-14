@@ -21,5 +21,4 @@
 
 ### Links de Referência: 
 * [Acesse os PDFs das aulas clicando aqui](https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf)
-* [Acesse as aulas clicando aqui](https://www.youtube.com/watch?v=UForX7ehChM&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
 * [O Repositório de Referência aqui](https://github.com/gustavoguanabara/html-css/blob/master/README.md)
